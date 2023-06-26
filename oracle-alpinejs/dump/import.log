@@ -1,0 +1,22 @@
+;;; 
+Import: Release 11.2.0.2.0 - Production on Sun Jun 18 15:04:55 2023
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Master table "SYSTEM"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+Starting "SYSTEM"."SYS_IMPORT_FULL_01":  system/******** DIRECTORY=DATA_PUMP_DIR DUMPFILE=TABLES.dmp 
+Processing object type TABLE_EXPORT/TABLE/TABLE
+ORA-39151: Table "DEMO"."STUDENT" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "DEMO"."REGISTER" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "DEMO"."RESULT" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "DEMO"."HEADS" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "DEMO"."GRADE" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "DEMO"."RECAP" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+Processing object type TABLE_EXPORT/TABLE/INDEX/INDEX
+Processing object type TABLE_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type TABLE_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Job "SYSTEM"."SYS_IMPORT_FULL_01" completed with 6 error(s) at 15:04:59

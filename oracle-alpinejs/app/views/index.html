@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>AlpineJS</title>
+        <script src="alpinejs-3.12.0-min.js" defer></script>
+        <script src="src.js"></script>
+        <!-- prettier-ignore -->
+    </head>
+    <body x-data="dataApp">
+        <!-- Re-usable Data -->
+        <div>
+            <ul>
+                <li><a href="#" @click="getData(1)">Faculty</a></li>
+                <li><a href="#" @click="getData(2)">Year</a></li>
+                <li><a href="#" @click="getData(3)">Semester</a></li>
+                <li><a href="#" @click="getData(4)">Recap</a></li>
+            </ul>
+        </div>
+        <br />
+        <div x-show="page === 1">
+            <table>
+                <template x-for="faculty in data[key]">
+                    <tr>
+                        <td x-text="faculty"></td>
+                    </tr>
+                </template>
+            </table>
+        </div>
+        <div x-show="page === 2">
+            <table>
+                <template x-for="year in data[key]">
+                    <tr>
+                        <td x-text="year"></td>
+                    </tr>
+                </template>
+            </table>
+        </div>
+        <div x-show="page === 3">
+            <table>
+                <template x-for="semester in data[key]">
+                    <tr>
+                        <td x-text="semester"></td>
+                    </tr>
+                </template>
+            </table>
+        </div>
+        <div x-show="page === 4">
+            <table>
+                <template x-for="recap in data[key]">
+                    <tr>
+                        <template x-for="col in recap">
+                            <td x-text="col"></td>
+                        </template>
+                    </tr>
+                </template>
+            </table>
+        </div>
+    </body>
+</html>
